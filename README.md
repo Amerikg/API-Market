@@ -3,16 +3,19 @@
 Proyecto backend de una tienda desarrollado con **Spring Boot**. Este sistema gestiona productos, categorías, clientes y compras, ofreciendo una API REST para operaciones CRUD.
 
 ## Estructura del Proyecto
+    
+```text
 spring-market/
 ├── src/
-│ ├── main/
-│ │ ├── groovy/com/spring_market/
-│ │ │ ├── domain/ **_Clases del modelo de dominio_**
-│ │ │ ├── persistence/ **_Repositorios y entidades JPA_**
-│ │ │ ├── web/controller/ **_Controladores REST_**
-│ │ └── resources/ **_Archivos de configuración_**
-│ └── test/ 
-├── build.gradle / pom.xml **_Dependencias y configuración del proyecto_**
+│   ├── main/
+│   │   ├── groovy/com/spring_market/
+│   │   │   ├── domain/               # Clases del modelo de dominio
+│   │   │   ├── persistence/          # Repositorios y entidades JPA
+│   │   │   ├── web/controller/       # Controladores REST
+│   │   └── resources/                # Archivos de configuración
+│   └── test/                         # Pruebas (si aplica)
+├── build.gradle / pom.xml            # Dependencias y configuración del proyecto
+```
 
 
 ## Requisitos
@@ -36,7 +39,7 @@ spring-market/
     spring.datasource.username=usuario
     spring.datasource.password=contraseña
 
-## Endpoints de ejemplo
+## Endpoints 
 - GET /products/all - Obtener todos los productos
 
 - POST /products/save - Crear un nuevo producto
