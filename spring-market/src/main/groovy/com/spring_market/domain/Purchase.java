@@ -65,6 +65,6 @@ public class Purchase {
     }
 
     public void setItems(List<PurchaseItem> items) {
-        this.items = this.items;
+        this.items = items; // Corrección: usar el parámetro recibido en lugar de this.items porque se asignaba a sí mismo
     }
 }
