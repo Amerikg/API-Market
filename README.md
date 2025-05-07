@@ -22,7 +22,7 @@ spring-market/
 
 - Java 17+
 - Gradle o Maven
-- Base de datos MySQL o compatible con JPA
+- Base de datos PostgreSQL 
 - Spring Boot
 
 ## Instalación y Ejecución
@@ -40,11 +40,19 @@ spring-market/
     spring.datasource.password=contraseña
 
 ## Endpoints 
-- GET /products/all - Obtener todos los productos
+### Product Endpoints
 
-- POST /products/save - Crear un nuevo producto
+| Method   | Endpoint    | Description |
+|:----------- |:---------:|:---------:|
+| GET    | /spring-market/api/products/all   | Get all products   |
+|GET |/spring-market/api/products/{id}|Get product by ID |
+| GET | /spring-market/api/products/category/{categoryId} |Get products by category ID|
+| POST | /spring-market/api/products/save| Create/Update a product|
+| DELETE | /spring-market/api/products/delete/{id}|Delete a product|
 
-- GET /products/{id} - Obtener un producto por ID
-
-- DELETE /products/delete/{id} - Eliminar producto
-
+### Purchase Endpoints
+| Method   | Endpoint    | Description |
+|:----------- |:---------:|:---------:|
+|GET|/spring-market/api/purchases/all|Get all purchases|
+|GET|/spring-market/api/purchases/client/{idClient}|Get purchases by client ID|
+|POST|/spring-market/api/purchases/save|Create a purchase|
