@@ -65,6 +65,6 @@ public class Purchase {
     }
 
     public void setItems(List<PurchaseItem> items) {
-        this.items = this.items;
+        this.items = items;
     }
 }
